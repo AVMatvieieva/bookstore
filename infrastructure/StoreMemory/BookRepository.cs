@@ -12,7 +12,7 @@ namespace StoreMemory
             new Book(3, "C Programming Language"),
             new Book(4, "Head First Design Patterns")
         };
-        public Book[] GetByTitle(string titlePart)
+        public Book[] GetAllByTitle(string titlePart)
         {
             return books.Where(b => b.Title.Contains(titlePart)).ToArray();
         }
